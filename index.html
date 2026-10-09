@@ -541,9 +541,9 @@
                 <td>Requires explicit Android system confirmation prompt and shows a persistent status bar notification while active.</td>
               </tr>
               <tr>
-                <td><code>READ_MEDIA_IMAGES</code><br><code>READ_MEDIA_VIDEO</code><br><code>READ_EXTERNAL_STORAGE</code></td>
-                <td>Enables importing photos or PDF slides onto the whiteboard and saving exported drawings/videos to device storage.</td>
-                <td>Scoped access. Uses Android's system file picker; the app accesses only files chosen by the user.</td>
+                <td><code>Android Photo Picker</code><br><code>READ_EXTERNAL_STORAGE</code> (Android 12 and below)</td>
+                <td>Enables importing photos or PDF slides onto the whiteboard and saving exported drawings/videos to device storage. On Android 13+, the app uses the official Android Photo Picker without requiring broad media permissions.</td>
+                <td>Scoped access. Uses Android's system photo picker; the app accesses only files explicitly chosen by the user.</td>
               </tr>
               <tr>
                 <td><code>INTERNET</code><br><code>ACCESS_NETWORK_STATE</code></td>
