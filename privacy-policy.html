@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy & Terms of Service — WhiteBoard | Tech2Nine</title>
+  <meta name="description" content="Official Privacy Policy and Terms & Conditions for WhiteBoard (com.tech2nine.whiteboard) developed by Tech2Nine. Fully compliant with Google Play Console Developer Policies.">
+  <meta name="author" content="Tech2Nine">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --primary-light: #eff6ff;
+      --accent: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --code-bg: #f1f5f9;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.08);
+      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+      --radius: 12px;
+      --max-width: 960px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #3b82f6;
+        --primary-dark: #2563eb;
+        --primary-light: rgba(59, 130, 246, 0.12);
+        --bg: #0b0f19;
+        --card-bg: #131b2e;
+        --text: #f8fafc;
+        --text-muted: #94a3b8;
+        --border: #1e293b;
+        --code-bg: #1e293b;
+        --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+        --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.4);
+        --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.5);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 15.5px;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 80px;
+    }
+
+    /* Container */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    header {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .brand-icon {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 800;
+      font-size: 20px;
+      box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+    }
+
+    .brand-text h1 {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    .brand-text span {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .nav-tabs {
+      display: flex;
+      gap: 8px;
+      background: var(--bg);
+      padding: 4px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    .tab-btn {
+      border: none;
+      background: transparent;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .tab-btn:hover {
+      color: var(--text);
+    }
+
+    .tab-btn.active {
+      background: var(--card-bg);
+      color: var(--primary);
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* Hero Banner */
+    .hero {
+      padding: 48px 0 32px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: var(--primary-light);
+      color: var(--primary);
+      font-size: 12.5px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      border: 1px solid rgba(37, 99, 235, 0.2);
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      color: var(--text-muted);
+      max-width: 680px;
+      margin: 0 auto;
+      font-size: 15px;
+    }
+
+    .meta-box {
+      margin-top: 24px;
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px 24px;
+      padding: 12px 24px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      font-size: 13px;
+      color: var(--text-muted);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .meta-item strong {
+      color: var(--text);
+    }
+
+    /* Content Cards */
+    .content-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px;
+      margin-bottom: 28px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .content-card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text);
+      letter-spacing: -0.01em;
+    }
+
+    .content-card h4 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 20px 0 10px;
+      color: var(--text);
+    }
+
+    .content-card p {
+      margin-bottom: 14px;
+      color: var(--text);
+    }
+
+    .content-card ul, .content-card ol {
+      margin: 12px 0 16px 24px;
+    }
+
+    .content-card li {
+      margin-bottom: 8px;
+    }
+
+    /* Highlight Alerts */
+    .alert {
+      padding: 16px 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+      border-left: 4px solid;
+      font-size: 14.5px;
+    }
+
+    .alert-info {
+      background: var(--primary-light);
+      border-left-color: var(--primary);
+      color: var(--text);
+    }
+
+    .alert-success {
+      background: rgba(16, 185, 129, 0.1);
+      border-left-color: var(--accent);
+      color: var(--text);
+    }
+
+    .alert-warning {
+      background: rgba(245, 158, 11, 0.1);
+      border-left-color: var(--warning);
+      color: var(--text);
+    }
+
+    /* Permissions Table */
+    .table-container {
+      overflow-x: auto;
+      margin: 20px 0;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    th {
+      background: var(--code-bg);
+      padding: 12px 16px;
+      font-weight: 600;
+      color: var(--text);
+      border-bottom: 1px solid var(--border);
+    }
+
+    td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      background: var(--code-bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: var(--primary);
+    }
+
+    /* Quick Jump Anchor Menu */
+    .toc-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 28px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .toc-title {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .toc-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 8px 16px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .toc-list a {
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .toc-list a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 60px;
+      padding-top: 30px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 13.5px;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    /* Toggle Visibility */
+    .section-view {
+      display: block;
+    }
+
+    .section-view.hidden {
+      display: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .header-inner {
+        flex-direction: column;
+        gap: 12px;
+      }
+      .content-card {
+        padding: 24px 18px;
+      }
+      .hero h2 {
+        font-size: 26px;
+      }
+      .meta-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Sticky Navigation -->
+  <header>
+    <div class="container header-inner">
+      <a href="#" class="brand">
+        <div class="brand-icon">W</div>
+        <div class="brand-text">
+          <h1>WhiteBoard</h1>
+          <span>Tech2Nine • com.tech2nine.whiteboard</span>
+        </div>
+      </a>
+      <nav class="nav-tabs">
+        <button class="tab-btn active" onclick="switchSection('privacy')">Privacy Policy</button>
+        <button class="tab-btn" onclick="switchSection('terms')">Terms & Conditions</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- PRIVACY POLICY SECTION                                                    -->
+  <!-- ========================================================================= -->
+  <section id="privacy-section" class="section-view">
+    <div class="container">
+      
+      <!-- Hero -->
+      <div class="hero">
+        <div class="badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Google Play Developer Policy Compliant
+        </div>
+        <h2>Privacy Policy for WhiteBoard</h2>
+        <p>Your privacy and intellectual property are our top priorities. WhiteBoard is built on a strict local-first, on-device architecture.</p>
+
+        <div class="meta-box">
+          <div class="meta-item"><strong>Effective Date:</strong> October 9, 2026</div>
+          <div class="meta-item"><strong>Application:</strong> WhiteBoard</div>
+          <div class="meta-item"><strong>Package ID:</strong> <code>com.tech2nine.whiteboard</code></div>
+          <div class="meta-item"><strong>Developer:</strong> Tech2Nine</div>
+        </div>
+      </div>
+
+      <!-- Quick Table of Contents -->
+      <div class="toc-card">
+        <div class="toc-title">Table of Contents</div>
+        <ul class="toc-list">
+          <li><a href="#overview">1. Core Privacy Principles</a></li>
+          <li><a href="#data-collection">2. Information Collection & Use</a></li>
+          <li><a href="#permissions">3. Device Permissions & Usage</a></li>
+          <li><a href="#screen-recording">4. Screen Recording & Foreground Service</a></li>
+          <li><a href="#ai-ml">5. On-Device AI & ML Kit Processing</a></li>
+          <li><a href="#third-parties">6. Third-Party Services & SDKs</a></li>
+          <li><a href="#payments">7. Payments & Subscriptions (Pro)</a></li>
+          <li><a href="#children">8. Children's Privacy (COPPA & Families)</a></li>
+          <li><a href="#data-retention">9. Data Retention & Deletion Policy</a></li>
+          <li><a href="#security">10. Data Security & Storage</a></li>
+          <li><a href="#contact">11. Developer Contact Info</a></li>
+        </ul>
+      </div>
+
+      <!-- 1. Core Principles -->
+      <div class="content-card" id="overview">
+        <h3>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" color="var(--primary)"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          1. Core Privacy Principles (Local-First Design)
+        </h3>
+        <p><strong>Tech2Nine</strong> ("we", "our", or "us") respects and values your privacy. We designed <strong>WhiteBoard</strong> (package name: <code>com.tech2nine.whiteboard</code>) as a modern, high-performance digital teaching and sketching board with on-device computing at its core.</p>
+        <div class="alert alert-success">
+          <strong>Key Commitment:</strong> We do NOT harvest, sell, rent, or monetize your creative drawings, handwritten lecture notes, mathematical formulas, or recorded MP4 lessons. All drawings and notes remain strictly stored on your physical device.
+        </div>
+        <p>This Privacy Policy explains what information may be processed, how device hardware permissions are used, and your rights under global privacy laws including GDPR, CCPA, and Google Play Developer Policies.</p>
+      </div>
+
+      <!-- 2. Data Collection & Use -->
+      <div class="content-card" id="data-collection">
+        <h3>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" color="var(--primary)"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+          2. Information Collection and Processing
+        </h3>
+        <h4>A. What We DO NOT Collect:</h4>
+        <ul>
+          <li><strong>No Personal Identity:</strong> We do not ask for or collect your name, home address, phone number, or contacts.</li>
+          <li><strong>No Sketches or Board Content:</strong> Your whiteboards, canvases, sticky notes, formulas, and stickers are saved only in your local Room Database and internal app storage. They are never transmitted to our servers.</li>
+          <li><strong>No Biometric Data:</strong> If you use biometric lock (fingerprint/face unlock) for private boards, the authentication is processed entirely within Android's hardware security module (BiometricPrompt). The app never reads or stores raw biometric templates.</li>
+        </ul>
+
+        <h4>B. What May Be Processed:</h4>
+        <ul>
+          <li><strong>Hashed Device Identifier:</strong> An anonymized string derived from Android ID is used solely to verify active in-app Pro licenses and check remote tool configuration via Supabase.</li>
+          <li><strong>Technical Diagnostics:</strong> Device model, screen orientation, and Android OS version to provide correct scaling, aspect ratio, and crash stability.</li>
+          <li><strong>Advertising Identifiers (Free Users):</strong> For free users, Google AdMob may process the Google Advertising ID (GAID) to display ads in compliance with Google's Advertising Policies. Pro users have all ads completely disabled.</li>
+        </ul>
+      </div>
+
+      <!-- 3. Permissions Breakdown -->
+      <div class="content-card" id="permissions">
+        <h3>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" color="var(--primary)"><path d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5z"/></svg>
+          3. Android Device Permissions &amp; Prominent Disclosure
+        </h3>
+        <p>In accordance with Google Play's <em>Prominent Disclosure and User Consent Policy</em>, WhiteBoard requests only the permissions strictly required to perform features requested by the user:</p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Permission</th>
+                <th>Purpose in WhiteBoard</th>
+                <th>User Control</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>CAMERA</code></td>
+                <td>Used strictly for two user-triggered actions: (1) scanning printed notes into text via OCR, and (2) optional floating face PIP preview during lesson video recordings.</td>
+                <td>Optional. Never triggered in background. Can be revoked at any time.</td>
+              </tr>
+              <tr>
+                <td><code>RECORD_AUDIO</code></td>
+                <td>Captures teacher or presenter voice commentary synchronously while recording an on-screen lesson video.</td>
+                <td>Optional. User can mute/disable microphone inside recording controls.</td>
+              </tr>
+              <tr>
+                <td><code>FOREGROUND_SERVICE_MEDIA_PROJECTION</code></td>
+                <td>Allows recording whiteboard demonstrations or sharing screen live to external displays/projectors via Google Cast or local Wi-Fi.</td>
+                <td>Requires explicit Android system permission prompt and shows persistent notification while running.</td>
+              </tr>
+              <tr>
+                <td><code>READ_MEDIA_IMAGES</code><br><code>READ_MEDIA_VIDEO</code><br><code>READ_EXTERNAL_STORAGE</code></td>
+                <td>Enables users to import existing images or PDF documents as background templates, and export finished board drawings as PDF or PNG.</td>
+                <td>Standard Android photo/document picker. App only accesses files specifically chosen by user.</td>
+              </tr>
+              <tr>
+                <td><code>INTERNET</code><br><code>ACCESS_NETWORK_STATE</code><br><code>ACCESS_WIFI_STATE</code></td>
+                <td>Used for remote tool flags (Supabase), displaying non-personalized ads (AdMob on free tier), local Wi-Fi WebRTC screen sharing, and Google Cast streaming.</td>
+                <td>System handled. Core drawing, saving, and PDF exports work 100% offline.</td>
+              </tr>
+              <tr>
+                <td><code>POST_NOTIFICATIONS</code></td>
+                <td>Displays the ongoing lesson recording control bar and status notifications.</td>
+                <td>Standard notification control.</td>
+              </tr>
+              <tr>
+                <td><code>VIBRATE</code></td>
+                <td>Provides subtle tactile haptic feedback when drawing strokes, snapping angles on the digital ruler, or selecting tools.</td>
+                <td>Can be turned off in WhiteBoard Settings.</td>
+              </tr>
+              <tr>
+                <td><code>USE_BIOMETRIC</code></td>
+                <td>Allows users to secure private whiteboard files using device fingerprint or facial authentication.</td>
+                <td>Optional. Enabled only if user chooses to lock a board.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 4. Screen Recording & Foreground Service -->
+      <div class="content-card" id="screen-recording">
+        <h3>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" color="var(--primary)"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3" fill="var(--danger)"/></svg>
+          4. Screen Recording &amp; Foreground Service Disclosure
+        </h3>
+        <p>WhiteBoard includes a built-in <strong>Lesson Recorder Studio</strong> and <strong>Live Screen Share</strong> system:</p>
+        <ul>
+          <li><strong>Explicit User Initiation:</strong> Screen recording and presentation projection NEVER start automatically. They start only when you explicitly tap the record or cast button.</li>
+          <li><strong>System-Level Confirmation:</strong> Android displays an official system prompt informing you that WhiteBoard will capture your screen before recording begins.</li>
+          <li><strong>Persistent Notification:</strong> While recording, Android displays a mandatory persistent foreground notification in your status bar indicating active capture.</li>
+          <li><strong>Storage Location:</strong> Recorded MP4 lesson videos are saved directly to your local device directory (<code>Movies/WhiteBoard/</code>). They are NOT uploaded to any cloud server.</li>
+        </ul>
+      </div>
+
+      <!-- 5. AI & ML Kit Processing -->
+      <div class="content-card" id="ai-ml">
+        <h3>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" color="var(--primary)"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 12 2.1 12.5"/></svg>
+          5. On-Device AI &amp; Machine Learning (ML Kit)
+        </h3>
+        <p>WhiteBoard utilizes <strong>Google Play Services ML Kit</strong> for two intelligent features:</p>
+        <ol>
+          <li><strong>OCR (Optical Character Recognition):</strong> Extracts editable text from images of printed or handwritten notes.</li>
+          <li><strong>Digital Ink Recognition & Smart Draw:</strong> Cleans rough hand-drawn strokes into perfect geometric shapes (rectangles, ellipses, arrows, stars).</li>
+        </ol>
+        <div class="alert alert-info">
+          <strong>100% On-Device Processing:</strong> ML Kit models run entirely locally on your Android device hardware. No photos, camera frames, handwriting strokes, or converted texts are sent to external servers or used for machine learning training.
+        </div>
+      </div>
+
+      <!-- 6. Third-Party Services -->
+      <div class="content-card" id="third-parties">
+        <h3>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" color="var(--primary)"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          6. Third-Party Services and SDKs
+        </h3>
+        <p>To deliver specific functionalities, WhiteBoard integrates the following reputable third-party SDKs, which may collect information governed by their respective privacy policies:</p>
+        <ul>
+          <li><strong>Google Play Services:</strong> Core application runtime, ML Kit, and Cast Framework. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
+          <li><strong>Google AdMob:</strong> Provides banner and interstitial advertisements for users on the free tier. AdMob may collect and process device identifiers and anonymous usage data. <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob Privacy Guide</a>.</li>
+          <li><strong>Google Play In-App Billing:</strong> Processes Pro plan upgrades and subscriptions securely. Tech2Nine never accesses or stores your banking or credit card details. <a href="https://play.google.com/intl/en_us/about/play-terms/" target="_blank" rel="noopener">Google Play Terms</a>.</li>
+          <li><strong>Supabase:</strong> Used exclusively for remote feature flag synchronization (e.g., enabling/disabling app tools globally) and validating authorized purchases. <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase Privacy Policy</a>.</li>
+        </ul>
+      </div>
+
+      <!-- 7. Payments & Subscriptions -->
+      <div class="content-card" id="payments">
+        <h3>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" color="var(--primary)"><rect width="20" height="14" x="2" y="5" rx="2"/><path d="M2 10h20"/></svg>
+          7. Payments and In-App Subscriptions
+        </h3>
+        <p>WhiteBoard offers an optional premium upgrade called <strong>WhiteBoard Pro</strong> (₹49/year or local equivalent):</p>
+        <ul>
+          <li><strong>Payment Security:</strong> All financial transactions are managed 100% by Google Play Billing. We do not collect, view, or retain your credit cards, debit cards, UPI IDs, or banking credentials.</li>
+          <li><strong>Cancellation &amp; Auto-Renewal:</strong> You can manage or cancel your subscription at any time in your Android Google Play Store account settings (<em>Play Store &gt; Profile &gt; Payments &amp; Subscriptions &gt; Subscriptions</em>).</li>
+          <li><strong>Refund Policy:</strong> Refunds are handled in accordance with the official <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play Refund Policy</a>.</li>
+        </ul>
+      </div>
+
+      <!-- 8. Children's Privacy -->
+      <div class="content-card" id="children">
+        <h3>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" color="var(--primary)"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          8. Children's Privacy (COPPA &amp; Google Play Families Policy)
+        </h3>
+        <p>WhiteBoard is designed as a creative and educational tool suitable for students, educators, and children of all ages:</p>
+        <ul>
+          <li>We do NOT knowingly collect personally identifiable information from children under 13 years of age (or under 16 in the European Union).</li>
+          <li>No social networking, public commenting, or chat rooms exist in WhiteBoard.</li>
+          <li>If a parent or guardian becomes aware that their child has provided personal information to us, please contact us at <code>support@tech2nine.com</code> and we will promptly take steps to delete any such data.</li>
+        </ul>
+      </div>
+
+      <!-- 9. Data Retention & Deletion -->
+      <div class="content-card" id="data-retention">
+        <h3>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" color="var(--primary)"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>
+          9. Data Retention &amp; User Data Deletion Policy
+        </h3>
+        <p>In compliance with Google Play's mandatory User Data Deletion requirements:</p>
+        <div class="alert alert-warning">
+          <strong>How to Delete Your Data Instantly:</strong>
+          <ol style="margin-top: 8px;">
+            <li><strong>Delete Individual Boards:</strong> In WhiteBoard, open the <em>History</em> or <em>Boards</em> tab, tap on any whiteboard, and select <em>Delete</em>. This immediately deletes the drawing and undo history from local storage.</li>
+            <li><strong>Complete Data Reset:</strong> Go to your Android device <em>Settings &gt; Apps &gt; WhiteBoard &gt; Storage &gt; Clear Storage / Clear Data</em>. This permanently wipes all boards, local settings, templates, and cached files from your device.</li>
+            <li><strong>Server Verification Data Deletion:</strong> If you wish to request deletion of any cached diagnostic or purchase verification records linked to your device identifier, email us at <code>support@tech2nine.com</code> with your device details. We will process and confirm deletion within 30 days.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- 10. Security -->
+      <div class="content-card" id="security">
+        <h3>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" color="var(--primary)"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          10. Data Security &amp; Storage
+        </h3>
+        <p>We implement modern security practices to protect your data:</p>
+        <ul>
+          <li>All network communications (such as remote feature flag queries) are transmitted using secure <strong>HTTPS/TLS 1.3</strong> encryption.</li>
+          <li>Board exports shared with other apps utilize Android's secure <code>FileProvider</code> with temporary, revocable URI permissions rather than direct file system paths.</li>
+          <li>Private locked boards leverage the Android Keystore system.</li>
+        </ul>
+      </div>
+
+      <!-- 11. Contact Info -->
+      <div class="content-card" id="contact">
+        <h3>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" color="var(--primary)"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          11. Developer Contact Information
+        </h3>
+        <p>If you have questions, feedback, or data requests regarding this Privacy Policy, please contact us:</p>
+        <div class="alert alert-info">
+          <strong>Developer:</strong> Tech2Nine<br>
+          <strong>Application:</strong> WhiteBoard (<code>com.tech2nine.whiteboard</code>)<br>
+          <strong>Official Support Email:</strong> <a href="mailto:support@tech2nine.com">support@tech2nine.com</a><br>
+          <strong>Alternate Inquiries:</strong> <a href="mailto:tech2nine.dev@gmail.com">tech2nine.dev@gmail.com</a><br>
+          <strong>Website:</strong> <a href="https://tech2nine.com" target="_blank" rel="noopener">https://tech2nine.com</a><br>
+          <strong>Location:</strong> India
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- TERMS & CONDITIONS SECTION                                                -->
+  <!-- ========================================================================= -->
+  <section id="terms-section" class="section-view hidden">
+    <div class="container">
+      
+      <!-- Hero -->
+      <div class="hero">
+        <div class="badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Legal Terms of Service
+        </div>
+        <h2>Terms &amp; Conditions for WhiteBoard</h2>
+        <p>Please read these Terms and Conditions carefully before using the WhiteBoard application.</p>
+
+        <div class="meta-box">
+          <div class="meta-item"><strong>Last Updated:</strong> October 9, 2026</div>
+          <div class="meta-item"><strong>Application:</strong> WhiteBoard</div>
+          <div class="meta-item"><strong>Package ID:</strong> <code>com.tech2nine.whiteboard</code></div>
+          <div class="meta-item"><strong>Developer:</strong> Tech2Nine</div>
+        </div>
+      </div>
+
+      <!-- 1. Agreement to Terms -->
+      <div class="content-card">
+        <h3>1. Agreement to Terms</h3>
+        <p>By downloading, installing, accessing, or using <strong>WhiteBoard</strong> (the "Application" or "App"), you agree to be bound by these Terms and Conditions ("Terms"). If you do not agree to these Terms, do not install or use the Application.</p>
+        <p>These Terms constitute a legally binding agreement between you ("User", "you") and <strong>Tech2Nine</strong> ("we", "us", or "our").</p>
+      </div>
+
+      <!-- 2. License Grant -->
+      <div class="content-card">
+        <h3>2. License Grant &amp; Restrictions</h3>
+        <p>Tech2Nine grants you a revocable, non-exclusive, non-transferable, limited license to download, install, and use the Application strictly in accordance with these Terms and the Google Play Terms of Service.</p>
+        <p><strong>You agree NOT to:</strong></p>
+        <ul>
+          <li>Decompile, reverse engineer, disassemble, or attempt to derive the source code of the Application.</li>
+          <li>Modify, adapt, translate, or create derivative works from the Application.</li>
+          <li>Distribute, sublicense, rent, lease, or lend the Application or unauthorized modifications thereof to third parties.</li>
+          <li>Use the Application for any unlawful, fraudulent, or harmful purposes.</li>
+        </ul>
+      </div>
+
+      <!-- 3. User-Generated Content & Ownership -->
+      <div class="content-card">
+        <h3>3. User-Generated Content &amp; Intellectual Property</h3>
+        <div class="alert alert-success">
+          <strong>You Own Your Work:</strong> You retain 100% full intellectual property rights, copyright, and ownership over all whiteboard drawings, sketches, mathematical equations, educational notes, and video lesson recordings that you create using WhiteBoard.
+        </div>
+        <p>Tech2Nine claims no ownership, title, or interest in any drawings, images, or files created or imported by you. Because WhiteBoard operates on a local-first architecture, your creations reside directly on your physical device.</p>
+        <p>The Application's software, user interface design, branding, logo, code, icons, and pre-packaged sticker catalogs are the proprietary property of Tech2Nine and protected by copyright laws.</p>
+      </div>
+
+      <!-- 4. Subscriptions & Billing -->
+      <div class="content-card">
+        <h3>4. In-App Purchases, Subscriptions &amp; Billing</h3>
+        <p>WhiteBoard offers core sketching and teaching tools free of charge. Users may optionally purchase <strong>WhiteBoard Pro</strong> to unlock advanced tools and remove advertisements:</p>
+        <ul>
+          <li><strong>Billing via Google Play:</strong> All payments are processed securely through your Google Play account in accordance with Google Play's Terms of Service.</li>
+          <li><strong>Subscription Renewal:</strong> Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current billing cycle.</li>
+          <li><strong>Managing Subscriptions:</strong> You can manage, change, or cancel subscriptions at any time via your Android device in Google Play Store &gt; Profile &gt; Payments &amp; Subscriptions.</li>
+          <li><strong>Refunds:</strong> Refund requests are governed strictly by the official Google Play Refund Policy. Tech2Nine does not directly process or collect credit card or banking payments.</li>
+        </ul>
+      </div>
+
+      <!-- 5. Acceptable Use -->
+      <div class="content-card">
+        <h3>5. Acceptable Use Policy</h3>
+        <p>You agree to use WhiteBoard responsibly. You shall not use the Application or its sharing/screen-casting features to broadcast, export, or transmit content that is illegal, defamatory, threatening, infringing on intellectual property rights, or harmful to minors.</p>
+      </div>
+
+      <!-- 6. Disclaimer of Warranties -->
+      <div class="content-card">
+        <h3>6. Disclaimer of Warranties ("AS IS")</h3>
+        <p>The Application is provided to you on an <strong>"AS IS"</strong> and <strong>"AS AVAILABLE"</strong> basis, with all faults and defects, without warranty of any kind.</p>
+        <p>To the maximum extent permitted by applicable law, Tech2Nine expressly disclaims all warranties, whether express, implied, statutory, or otherwise, including the implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement. We do not warrant that the Application will meet your requirements, achieve any intended results, be compatible with all device hardware, or operate without uninterrupted errors.</p>
+      </div>
+
+      <!-- 7. Limitation of Liability -->
+      <div class="content-card">
+        <h3>7. Limitation of Liability</h3>
+        <p>To the fullest extent permitted by applicable law, in no event shall Tech2Nine, its developers, or affiliates be liable for any indirect, incidental, special, consequential, or punitive damages (including loss of data, loss of business, or device malfunction) arising out of or in connection with your use of or inability to use the Application.</p>
+        <p>In any case, Tech2Nine's entire aggregate liability under any provision of these Terms shall be limited to the amount actually paid by you for the Application through Google Play during the twelve (12) months preceding the claim.</p>
+      </div>
+
+      <!-- 8. Governing Law -->
+      <div class="content-card">
+        <h3>8. Governing Law &amp; Dispute Resolution</h3>
+        <p>These Terms shall be governed by and construed in accordance with the laws of <strong>India</strong>, without regard to its conflict of law principles. Any dispute arising out of or related to these Terms shall be subject to the exclusive jurisdiction of the competent courts located in India.</p>
+      </div>
+
+      <!-- 9. Changes to Terms -->
+      <div class="content-card">
+        <h3>9. Changes to These Terms</h3>
+        <p>We reserve the right to amend or replace these Terms at our sole discretion. Any changes will be posted on this page with an updated "Last Updated" date. Your continued use of the Application after any such revisions constitutes your acceptance of the new Terms.</p>
+      </div>
+
+      <!-- 10. Contact Info -->
+      <div class="content-card">
+        <h3>10. Contact Us</h3>
+        <p>If you have any questions or concerns regarding these Terms and Conditions, please contact us at:</p>
+        <div class="alert alert-info">
+          <strong>Developer:</strong> Tech2Nine<br>
+          <strong>App:</strong> WhiteBoard (<code>com.tech2nine.whiteboard</code>)<br>
+          <strong>Email:</strong> <a href="mailto:support@tech2nine.com">support@tech2nine.com</a><br>
+          <strong>Alternate:</strong> <a href="mailto:tech2nine.dev@gmail.com">tech2nine.dev@gmail.com</a><br>
+          <strong>Website:</strong> <a href="https://tech2nine.com" target="_blank" rel="noopener">https://tech2nine.com</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Tech2Nine. All rights reserved. • <strong>WhiteBoard</strong> (<code>com.tech2nine.whiteboard</code>)</p>
+      <p style="margin-top: 6px; font-size: 12.5px;">Designed for Google Play Console Developer Policy Compliance.</p>
+    </div>
+  </footer>
+
+  <script>
+    function switchSection(target) {
+      const privacySec = document.getElementById('privacy-section');
+      const termsSec = document.getElementById('terms-section');
+      const tabs = document.querySelectorAll('.tab-btn');
+
+      if (target === 'privacy') {
+        privacySec.classList.remove('hidden');
+        termsSec.classList.add('hidden');
+        tabs[0].classList.add('active');
+        tabs[1].classList.remove('active');
+        window.location.hash = '#privacy-policy';
+      } else {
+        privacySec.classList.add('hidden');
+        termsSec.classList.remove('hidden');
+        tabs[0].classList.remove('active');
+        tabs[1].classList.add('active');
+        window.location.hash = '#terms-and-conditions';
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Hash based auto-switch
+    window.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash.toLowerCase();
+      if (hash.includes('term') || hash.includes('tos') || hash.includes('condition')) {
+        switchSection('terms');
+      } else {
+        switchSection('privacy');
+      }
+    });
+  </script>
+</body>
+</html>
